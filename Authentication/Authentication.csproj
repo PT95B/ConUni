@@ -181,7 +181,6 @@
     <Compile Include="Controllers\EnrollmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -196,6 +195,10 @@
     <Compile Include="Migrations\201511260156211_removedate.cs" />
     <Compile Include="Migrations\201511260156211_removedate.Designer.cs">
       <DependentUpon>201511260156211_removedate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260258412_students.cs" />
+    <Compile Include="Migrations\201511260258412_students.Designer.cs">
+      <DependentUpon>201511260258412_students.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -297,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511260156211_removedate.resx">
       <DependentUpon>201511260156211_removedate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260258412_students.resx">
+      <DependentUpon>201511260258412_students.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

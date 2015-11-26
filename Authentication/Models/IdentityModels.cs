@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
+using System.Collections.Generic;
 
 namespace Authentication.Models
 {
@@ -11,10 +12,11 @@ namespace Authentication.Models
     public class ApplicationUser : IdentityUser
     {
 
+        //public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         //public DateTime EnrollmentDate { get; set; }
-
+        public virtual ICollection<Enrollment> Enrollments { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
@@ -33,7 +35,7 @@ namespace Authentication.Models
         }
 
 
-        public DbSet<ApplicationUser> Students { get; set; }
+        //public DbSet<ApplicationUser> Students { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Course> Courses { get; set; }
 
