@@ -13,6 +13,8 @@ namespace Authentication.Migrations
         {
             AutomaticMigrationsEnabled = false;
             ContextKey = "Authentication.Models.ApplicationDbContext";
+
+
         }
 
         protected override void Seed(Authentication.Models.ApplicationDbContext context)

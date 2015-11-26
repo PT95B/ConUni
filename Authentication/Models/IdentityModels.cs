@@ -5,6 +5,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
+using MySql.Data.Entity;
+using System.Data.Entity.Migrations.History;
 
 namespace Authentication.Models
 {
@@ -26,14 +28,17 @@ namespace Authentication.Models
             return userIdentity;
         }
     }
-
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
             : base("SchoolContext", throwIfV1Schema: false)
         {
         }
-
+        //static ApplicationDbContext()
+        //{
+        //    DbConfiguration.SetConfiguration(new MySql.Data.Entity.MySqlEFConfiguration());
+        //}
 
         //public DbSet<ApplicationUser> Students { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
@@ -42,6 +47,17 @@ namespace Authentication.Models
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<IdentityRole>()
+                .Property(c => c.Name)
+                .HasMaxLength(128)
+                .IsRequired();
+            modelBuilder
+               .Entity<ApplicationUser>()
+               .Property(p => p.UserName)
+               .HasMaxLength(255);
         }
     }
 }
