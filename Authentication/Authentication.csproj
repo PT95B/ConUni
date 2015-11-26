@@ -247,53 +247,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511251004095_InitialCreate.cs" />
-    <Compile Include="Migrations\201511251004095_InitialCreate.Designer.cs">
-      <DependentUpon>201511251004095_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260147281_updatDatabase.cs" />
-    <Compile Include="Migrations\201511260147281_updatDatabase.Designer.cs">
-      <DependentUpon>201511260147281_updatDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260156211_removedate.cs" />
-    <Compile Include="Migrations\201511260156211_removedate.Designer.cs">
-      <DependentUpon>201511260156211_removedate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260258412_students.cs" />
-    <Compile Include="Migrations\201511260258412_students.Designer.cs">
-      <DependentUpon>201511260258412_students.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260439175_coursechanges.cs" />
-    <Compile Include="Migrations\201511260439175_coursechanges.Designer.cs">
-      <DependentUpon>201511260439175_coursechanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260543460_new.cs" />
-    <Compile Include="Migrations\201511260543460_new.Designer.cs">
-      <DependentUpon>201511260543460_new.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260602586_coursestuff.cs" />
-    <Compile Include="Migrations\201511260602586_coursestuff.Designer.cs">
-      <DependentUpon>201511260602586_coursestuff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260701337_stuff.cs" />
-    <Compile Include="Migrations\201511260701337_stuff.Designer.cs">
-      <DependentUpon>201511260701337_stuff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260720540_t.cs" />
-    <Compile Include="Migrations\201511260720540_t.Designer.cs">
-      <DependentUpon>201511260720540_t.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260806570_try.cs" />
-    <Compile Include="Migrations\201511260806570_try.Designer.cs">
-      <DependentUpon>201511260806570_try.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260834159_foregn.cs" />
-    <Compile Include="Migrations\201511260834159_foregn.Designer.cs">
-      <DependentUpon>201511260834159_foregn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511260847518_restart.cs" />
-    <Compile Include="Migrations\201511260847518_restart.Designer.cs">
-      <DependentUpon>201511260847518_restart.cs</DependentUpon>
+    <Compile Include="Migrations\201511262146473_initial.cs" />
+    <Compile Include="Migrations\201511262146473_initial.Designer.cs">
+      <DependentUpon>201511262146473_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\HistorydbContext.cs" />
@@ -410,41 +366,8 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511251004095_InitialCreate.resx">
-      <DependentUpon>201511251004095_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260147281_updatDatabase.resx">
-      <DependentUpon>201511260147281_updatDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260156211_removedate.resx">
-      <DependentUpon>201511260156211_removedate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260258412_students.resx">
-      <DependentUpon>201511260258412_students.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260439175_coursechanges.resx">
-      <DependentUpon>201511260439175_coursechanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260543460_new.resx">
-      <DependentUpon>201511260543460_new.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260602586_coursestuff.resx">
-      <DependentUpon>201511260602586_coursestuff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260701337_stuff.resx">
-      <DependentUpon>201511260701337_stuff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260720540_t.resx">
-      <DependentUpon>201511260720540_t.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260806570_try.resx">
-      <DependentUpon>201511260806570_try.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260834159_foregn.resx">
-      <DependentUpon>201511260834159_foregn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511260847518_restart.resx">
-      <DependentUpon>201511260847518_restart.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511262146473_initial.resx">
+      <DependentUpon>201511262146473_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

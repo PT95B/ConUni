@@ -50,15 +50,13 @@ namespace Authentication.Models
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<IdentityRole>()
-            //    .Property(c => c.Name)
-            //    .HasMaxLength(128)
-            //    .IsRequired();
-            //modelBuilder
-            //   .Entity<ApplicationUser>()
-            //   .Property(p => p.UserName)
-            //   .HasMaxLength(255);
+            base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>()
+                .Property(c => c.Name).HasMaxLength(128).IsRequired();
+
+            modelBuilder.Entity<ApplicationUser>().ToTable("AspNetUsers")//I have to declare the table name, otherwise IdentityUser will be created
+                .Property(c => c.UserName).HasMaxLength(128).IsRequired();
         }
     }
 }
