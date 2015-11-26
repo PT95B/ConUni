@@ -177,6 +177,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="ChatHub.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\Enrollments1Controller.cs" />
+    <Compile Include="Controllers\EnrollmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -202,6 +205,26 @@
     <Compile Include="Migrations\201511260439175_coursechanges.Designer.cs">
       <DependentUpon>201511260439175_coursechanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511260543460_new.cs" />
+    <Compile Include="Migrations\201511260543460_new.Designer.cs">
+      <DependentUpon>201511260543460_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260720540_t.cs" />
+    <Compile Include="Migrations\201511260720540_t.Designer.cs">
+      <DependentUpon>201511260720540_t.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260806570_try.cs" />
+    <Compile Include="Migrations\201511260806570_try.Designer.cs">
+      <DependentUpon>201511260806570_try.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260834159_foregn.cs" />
+    <Compile Include="Migrations\201511260834159_foregn.Designer.cs">
+      <DependentUpon>201511260834159_foregn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260847518_restart.cs" />
+    <Compile Include="Migrations\201511260847518_restart.Designer.cs">
+      <DependentUpon>201511260847518_restart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
@@ -220,6 +243,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Uni220 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Uni220 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -271,6 +296,21 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Chat.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
+    <Content Include="Views\Courses\Delete.cshtml" />
+    <Content Include="Views\Courses\Details.cshtml" />
+    <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Enrollments\Create.cshtml" />
+    <Content Include="Views\Enrollments\Delete.cshtml" />
+    <Content Include="Views\Enrollments\Details.cshtml" />
+    <Content Include="Views\Enrollments\Edit.cshtml" />
+    <Content Include="Views\Enrollments\Index.cshtml" />
+    <Content Include="Views\Enrollments1\Create.cshtml" />
+    <Content Include="Views\Enrollments1\Delete.cshtml" />
+    <Content Include="Views\Enrollments1\Details.cshtml" />
+    <Content Include="Views\Enrollments1\Edit.cshtml" />
+    <Content Include="Views\Enrollments1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -298,6 +338,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511260439175_coursechanges.resx">
       <DependentUpon>201511260439175_coursechanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260543460_new.resx">
+      <DependentUpon>201511260543460_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260720540_t.resx">
+      <DependentUpon>201511260720540_t.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260806570_try.resx">
+      <DependentUpon>201511260806570_try.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260834159_foregn.resx">
+      <DependentUpon>201511260834159_foregn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260847518_restart.resx">
+      <DependentUpon>201511260847518_restart.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

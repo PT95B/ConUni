@@ -12,7 +12,7 @@ namespace Authentication.Models
     public class ApplicationUser : IdentityUser
     {
 
-        //public int ID { get; set; }
+        public int Identity{ get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         //public DateTime EnrollmentDate { get; set; }

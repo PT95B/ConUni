@@ -11,7 +11,7 @@ namespace Authentication.Models
         public string Title { get; set; }
         public int Assignments { get; set; }
         public DateTime Duedate { get; set; }
-        public bool Completed { get; set; }
+ 
         public string description { get; set; }
 
 
