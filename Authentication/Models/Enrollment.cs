@@ -16,6 +16,7 @@ namespace Authentication.Models
         {
             public int EnrollmentID { get; set; }
             public int CourseID { get; set; }
+            public string EnrolledStudent { get; set; }
             //public int StudentID { get; set; }
             //public Grade? Grade { get; set; }
 

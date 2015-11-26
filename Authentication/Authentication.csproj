@@ -177,8 +177,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="ChatHub.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CourseController.cs" />
-    <Compile Include="Controllers\EnrollmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -199,6 +197,10 @@
     <Compile Include="Migrations\201511260258412_students.cs" />
     <Compile Include="Migrations\201511260258412_students.Designer.cs">
       <DependentUpon>201511260258412_students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260439175_coursechanges.cs" />
+    <Compile Include="Migrations\201511260439175_coursechanges.Designer.cs">
+      <DependentUpon>201511260439175_coursechanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -268,16 +270,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Course\Create.cshtml" />
-    <Content Include="Views\Course\Delete.cshtml" />
-    <Content Include="Views\Course\Details.cshtml" />
-    <Content Include="Views\Course\Edit.cshtml" />
-    <Content Include="Views\Course\Index.cshtml" />
-    <Content Include="Views\Enrollment\Create.cshtml" />
-    <Content Include="Views\Enrollment\Delete.cshtml" />
-    <Content Include="Views\Enrollment\Details.cshtml" />
-    <Content Include="Views\Enrollment\Edit.cshtml" />
-    <Content Include="Views\Enrollment\Index.cshtml" />
     <Content Include="Views\Home\Chat.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -303,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511260258412_students.resx">
       <DependentUpon>201511260258412_students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260439175_coursechanges.resx">
+      <DependentUpon>201511260439175_coursechanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -41,7 +41,8 @@ namespace Authentication.Controllers
         public ActionResult Create()
         {
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title");
-            ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName");
+            //ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName");
+            ViewBag.EnrolledStudent = ;
             return View();
         }
 
@@ -60,7 +61,7 @@ namespace Authentication.Controllers
             }
 
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title", enrollment.CourseID);
-            ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName", enrollment.StudentID);
+            //ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName", enrollment.StudentID);
             return View(enrollment);
         }
 
@@ -77,7 +78,7 @@ namespace Authentication.Controllers
                 return HttpNotFound();
             }
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title", enrollment.CourseID);
-            ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName", enrollment.StudentID);
+            //ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName", enrollment.StudentID);
             return View(enrollment);
         }
 
@@ -95,7 +96,7 @@ namespace Authentication.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title", enrollment.CourseID);
-            ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName", enrollment.StudentID);
+            //ViewBag.StudentID = new SelectList(db.Users, "ID", "LastName", enrollment.StudentID);
             return View(enrollment);
         }
 

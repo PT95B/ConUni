@@ -9,8 +9,11 @@ namespace Authentication.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int CourseID { get; set; }
         public string Title { get; set; }
-        public int Credits { get; set; }
+        public int Assignments { get; set; }
         public DateTime Duedate { get; set; }
+        public bool Completed { get; set; }
+        public string description { get; set; }
+
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
