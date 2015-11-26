@@ -50,14 +50,15 @@ namespace Authentication.Models
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<IdentityRole>()
-                .Property(c => c.Name)
-                .HasMaxLength(128)
-                .IsRequired();
-            modelBuilder
-               .Entity<ApplicationUser>()
-               .Property(p => p.UserName)
-               .HasMaxLength(255);
+            //modelBuilder.Entity<IdentityRole>()
+            //    .Property(c => c.Name)
+            //    .HasMaxLength(128)
+            //    .IsRequired();
+            //modelBuilder
+            //   .Entity<ApplicationUser>()
+            //   .Property(p => p.UserName)
+            //   .HasMaxLength(255);
+
         }
     }
 }
