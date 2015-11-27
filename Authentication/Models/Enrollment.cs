@@ -26,7 +26,7 @@ namespace Authentication.Models
 
 
             public virtual Course Course { get; set; }
-            [ForeignKey("StudentID")]
+            [ForeignKey("StudentID")]  //studentid needed to be different from the normal key
             public virtual ApplicationUser Student { get; set; }
         }
 }

@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Authentication.Controllers
 {
+    [Authorize]
     public class Enrollments1Controller : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -19,7 +20,7 @@ namespace Authentication.Controllers
         public ActionResult Index()
         {
             var userid = User.Identity.GetUserId();
-            var enrollments = db.Enrollments.Include(e => e.Course).Where(u => u.Student.Id == userid).ToList();
+            var enrollments = db.Enrollments.Include(e => e.Course).Where(u => u.Student.Id == userid).ToList();  //only get the enrollments for the current user that is loged in
             return View(enrollments);
         }
 
@@ -42,7 +43,7 @@ namespace Authentication.Controllers
         public ActionResult Create()
         {
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title");
-            ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName");
+            //ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName");
             return View();
         }
 
@@ -65,7 +66,7 @@ namespace Authentication.Controllers
             }
 
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title", enrollment.CourseID);
-            ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName", enrollment.StudentID);
+            //ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName", enrollment.StudentID);
             return View(enrollment);
         }
 
@@ -82,7 +83,7 @@ namespace Authentication.Controllers
                 return HttpNotFound();
             }
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title", enrollment.CourseID);
-            ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName", enrollment.StudentID);
+            //ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName", enrollment.StudentID);
             return View(enrollment);
         }
 
@@ -100,7 +101,7 @@ namespace Authentication.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title", enrollment.CourseID);
-            ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName", enrollment.StudentID);
+            //ViewBag.StudentID = new SelectList(db.Users, "Id", "FirstName", enrollment.StudentID);
             return View(enrollment);
         }
 

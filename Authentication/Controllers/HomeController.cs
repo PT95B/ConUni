@@ -27,6 +27,8 @@ namespace Authentication.Controllers
 
             return View();
         }
+
+        [Authorize]
         public ActionResult Chat()
         {
             return View();
